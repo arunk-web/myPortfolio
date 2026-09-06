@@ -122,6 +122,23 @@
   .about-body{color:var(--ink-soft); font-size:16px; max-width:70ch;}
   .about-body strong{color:var(--ink); font-weight:600;}
 
+  /* EDUCATION TIMELINE */
+  .timeline{position:relative; padding-left:28px;}
+  .timeline::before{
+    content:""; position:absolute; left:5px; top:6px; bottom:6px; width:1px;
+    background:var(--line);
+  }
+  .tl-item{position:relative; padding-bottom:34px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-dot{
+    position:absolute; left:-28px; top:4px; width:11px; height:11px; border-radius:50%;
+    background:var(--accent); border:2px solid #fff; box-shadow:0 0 0 1px var(--accent);
+  }
+  .tl-years{font-family:var(--mono); font-size:12.5px; color:var(--accent); margin-bottom:6px;}
+  .tl-school{font-family:var(--display); font-weight:600; font-size:17.5px; margin-bottom:4px;}
+  .tl-course{color:var(--ink-soft); font-size:14.5px; margin-bottom:4px;}
+  .tl-note{color:var(--ink-soft); font-size:13.5px; opacity:.8;}
+
   /* EXPERIENCE */
   .exp-card{
     border:1px solid var(--line); border-radius:var(--radius); padding:26px 28px;
@@ -235,6 +252,7 @@
     <div class="logo"><span class="dot"></span>arun.dev</div>
     <ul class="nav-links">
       <li><a href="#about">about</a></li>
+      <li><a href="#education">education</a></li>
       <li><a href="#experience">experience</a></li>
       <li><a href="#projects">projects</a></li>
       <li><a href="#achievements">achievements</a></li>
@@ -288,10 +306,44 @@
 
   <hr class="divider">
 
+  <section id="education">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">02 · education</span>
+        <h2>Academic background</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-years">2023 — 2027</div>
+          <div class="tl-school">Rajkiya Engineering College Sonbhadra</div>
+          <div class="tl-course">B.Tech, Computer Science and Engineering</div>
+          <div class="tl-note">CGPA: 7.5 · Sonbhadra, Uttar Pradesh</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-years">2021 — 2022</div>
+          <div class="tl-school">WCA Inter College</div>
+          <div class="tl-course">CBSE Class XII</div>
+          <div class="tl-note">83.8% · Fatehpur, Uttar Pradesh</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-years">2019 — 2020</div>
+          <div class="tl-school">WCA Inter College</div>
+          <div class="tl-course">CBSE Class X</div>
+          <div class="tl-note">90.33% · Fatehpur, Uttar Pradesh</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
   <section id="experience">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num">02 · experience</span>
+        <span class="sec-num">03 · experience</span>
         <h2>Where I've worked</h2>
       </div>
       <div class="exp-card">
@@ -313,7 +365,7 @@
   <section id="projects">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num">03 · projects</span>
+        <span class="sec-num">04 · projects</span>
         <h2>Things I've built</h2>
       </div>
       <div class="proj-grid">
@@ -376,7 +428,7 @@
   <section id="achievements">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num">04 · achievements</span>
+        <span class="sec-num">05 · achievements</span>
         <h2>Competitive log</h2>
       </div>
       <div class="log">
@@ -409,7 +461,7 @@
   <section id="skills">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-num">05 · skills</span>
+        <span class="sec-num">06 · skills</span>
         <h2>Toolbox</h2>
       </div>
       <div class="skill-cat">
